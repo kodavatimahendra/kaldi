@@ -90,7 +90,7 @@ if [ "$speed_perturb" == "true" ]; then suffix=_sp; fi
 dir=${dir}${suffix}
 
 if $use_pitch; then feat_suffix=${feat_suffix}_pitch ; fi
-dir=${dir}${suffix}
+dir=${dir}${feat_suffix}
 
 for lang_index in `seq 0 $[$num_langs-1]`; do
   echo "$0: extract high resolution 40dim MFCC + pitch for speed-perturbed data "
